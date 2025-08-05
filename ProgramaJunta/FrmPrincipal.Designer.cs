@@ -59,6 +59,7 @@ namespace ProgramaJunta
             panelCuerpo = new Panel();
             btnSincronizar = new Button();
             panel2 = new Panel();
+            button1 = new Button();
             menuStrip1.SuspendLayout();
             panelCuerpo.SuspendLayout();
             panel2.SuspendLayout();
@@ -295,6 +296,7 @@ namespace ProgramaJunta
             // 
             panelCuerpo.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panelCuerpo.BackColor = Color.Transparent;
+            panelCuerpo.Controls.Add(button1);
             panelCuerpo.Controls.Add(btnSincronizar);
             panelCuerpo.Controls.Add(pnlControlUser);
             panelCuerpo.Location = new Point(0, 43);
@@ -322,6 +324,15 @@ namespace ProgramaJunta
             panel2.Name = "panel2";
             panel2.Size = new Size(1016, 40);
             panel2.TabIndex = 3;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(256, 0);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 3;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
             // 
             // FrmPrincipal
             // 
@@ -380,5 +391,6 @@ namespace ProgramaJunta
         private Panel panelCuerpo;
         private Panel panel2;
         private Button btnSincronizar;
+        private Button button1;
     }
 }
