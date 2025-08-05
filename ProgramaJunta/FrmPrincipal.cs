@@ -1,4 +1,5 @@
 using AutoUpdaterDotNET;
+
 using System.Diagnostics;
 using System.Drawing.Drawing2D;
 using System.Runtime.InteropServices;
@@ -137,7 +138,8 @@ namespace ProgramaJunta
 
         private void FrmPrincipal_Load(object sender, EventArgs e)
         {
-            AutoUpdater.Start("https://tu-host/update.xml");
+            // Verificar actualizaciones al cargar el formulario principal
+            AutoUpdater.Start("https://jonny81crespo.github.io/tu-ProgramaJuntaDeAgua/actualizacion.xml");
             // pnlControlUser.BackColor = Color.FromArgb(200, 90, 183, 219);
 
         }
@@ -188,7 +190,7 @@ namespace ProgramaJunta
             // y que ha configurado una carpeta de sincronización local.
             // NECESITARÁS SABER LA RUTA EXACTA DE SU CARPETA DE GOOGLE DRIVE.
             // Esto a menudo es C:\Users\[TuUsuario]\Google Drive (o My Drive)
-            string googleDriveRoot = @"F:\Mi unidad";
+            string googleDriveRoot = @"F:\Mi unidad";               
             string destinationFolder = Path.Combine(googleDriveRoot, "CopiasDeSeguridadDBAguaGestion"); // Una subcarpeta para tus backups
 
             if (!Directory.Exists(googleDriveRoot))

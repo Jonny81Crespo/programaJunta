@@ -1,3 +1,5 @@
+using AutoUpdaterDotNET;
+
 namespace ProgramaJunta
 {
     internal static class Program
@@ -10,8 +12,6 @@ namespace ProgramaJunta
         {
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
-            /*ApplicationConfiguration.Initialize();
-            Application.Run(new FrmLogin());*/
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
@@ -21,7 +21,10 @@ namespace ProgramaJunta
                 string finalConnectionString = DatabaseManager.GetConnectionString();
                 SqlServerHelper.SetConnectionString(finalConnectionString);
 
-                    Application.Run(new FrmLogin()); 
+                // Configurar AutoUpdater.NET
+                AutoUpdater.Start("https://jonny81crespo.github.io/tu-ProgramaJuntaDeAgua/actualizacion.xml");
+
+                Application.Run(new FrmLogin()); 
             
             }
             catch (Exception ex)
