@@ -22,7 +22,7 @@ namespace ProgramaJunta
                 SqlServerHelper.SetConnectionString(finalConnectionString);
 
                 // Configurar AutoUpdater.NET
-                AutoUpdater.Start("https://jonny81crespo.github.io/tu-ProgramaJuntaDeAgua/actualizacion.xml");
+                //AutoUpdater.Start("https://jonny81crespo.github.io/tu-ProgramaJuntaDeAgua/actualizacion.xml");
 
                 Application.Run(new FrmLogin()); 
             
