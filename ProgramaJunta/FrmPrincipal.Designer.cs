@@ -59,6 +59,7 @@ namespace ProgramaJunta
             panelCuerpo = new Panel();
             btnSincronizar = new Button();
             panel2 = new Panel();
+            comboBox1 = new ComboBox();
             menuStrip1.SuspendLayout();
             panelCuerpo.SuspendLayout();
             panel2.SuspendLayout();
@@ -295,6 +296,7 @@ namespace ProgramaJunta
             // 
             panelCuerpo.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panelCuerpo.BackColor = Color.Transparent;
+            panelCuerpo.Controls.Add(comboBox1);
             panelCuerpo.Controls.Add(btnSincronizar);
             panelCuerpo.Controls.Add(pnlControlUser);
             panelCuerpo.Location = new Point(0, 43);
@@ -322,6 +324,14 @@ namespace ProgramaJunta
             panel2.Name = "panel2";
             panel2.Size = new Size(1016, 40);
             panel2.TabIndex = 3;
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(315, 12);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(121, 23);
+            comboBox1.TabIndex = 3;
             // 
             // FrmPrincipal
             // 
@@ -380,5 +390,6 @@ namespace ProgramaJunta
         private Panel panelCuerpo;
         private Panel panel2;
         private Button btnSincronizar;
+        private ComboBox comboBox1;
     }
 }
