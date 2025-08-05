@@ -139,7 +139,7 @@ namespace ProgramaJunta
         private void FrmPrincipal_Load(object sender, EventArgs e)
         {
             // Verificar actualizaciones al cargar el formulario principal
-            AutoUpdater.Start("https://jonny81crespo.github.io/tu-ProgramaJuntaDeAgua/actualizacion.xml");
+            AutoUpdater.Start("https://jonny81crespo.github.io/ProgramaJuntaDeAgua/actualizacion.xml");
             // pnlControlUser.BackColor = Color.FromArgb(200, 90, 183, 219);
 
         }
