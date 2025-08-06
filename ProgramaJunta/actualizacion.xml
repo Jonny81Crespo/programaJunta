@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <item>
-  <version>1.0.1</version>
+  <version>1.0.0</version>
   <url>https://jonny81crespo.github.io/ProgramaJunta/ProgramaJuntaSetup.msi</url>
   <changelog>https://jonny81crespo.github.io/ProgramaJunta/changelog.html</changelog>
   <mandatory>false</mandatory>
